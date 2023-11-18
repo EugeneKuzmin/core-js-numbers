@@ -463,8 +463,9 @@ function getNumberValue(number) {
  * '5'      => false
  */
 function isNumber(number) {
-  if (!Number.isFinite(number)) return false;
-  return typeof number === 'number';
+  // if (!Number.isFinite(number)) return false;
+  // return typeof number === 'number';
+  return false
 }
 
 /**
@@ -600,7 +601,7 @@ function getIntegerPartNumber(number) {
  * 0.1, 0.2, 0.3 => 0.6
  */
 function getSumOfNumbers(x1, x2, x3) {
-  return x1 + x2 + x3;
+  return (x1 + x2 + x3).toFixed(8);
 }
 
 /**
