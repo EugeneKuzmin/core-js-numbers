@@ -464,8 +464,7 @@ function getNumberValue(number) {
  */
 function isNumber(number) {
   // if (!Number.isFinite(number)) return false;
-  // return typeof number === 'number';
-  return false
+  return typeof number === 'number';
 }
 
 /**
