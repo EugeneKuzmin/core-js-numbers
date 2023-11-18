@@ -463,7 +463,7 @@ function getNumberValue(number) {
  * '5'      => false
  */
 function isNumber(number) {
-  // if (!Number.isFinite(number)) return false;
+  if (!Number.isFinite(number)) return false;
   return typeof number === 'number';
 }
 
@@ -632,7 +632,7 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -1, 1 => -1 | 0 | 1
  */
 function getRandomInteger(min, max) {
-  return Math.random() * (max - min) + min;
+  return Math.trunc(Math.random() * (max - min)) + min;
 }
 
 /**
